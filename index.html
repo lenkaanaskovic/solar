@@ -29,7 +29,7 @@
       overflow: hidden;
     }
 
-    /* 🔧 Updated responsive grid layout */
+    /* ✅ MOBILE-FRIENDLY LAYOUT */
     #app {
       height: 100%;
       display: grid;
@@ -56,16 +56,28 @@
         width: 100%;
       }
     }
-
-    /* Keep the rest of your CSS exactly as it was (unchanged) */
-    /* Your full styles go here below... */
   </style>
 </head>
 <body>
-  <!-- 👇 Keep the rest of your HTML and <script> exactly the same -->
-  <!-- For brevity, not pasting the rest of your 2000+ lines of JS and HTML here -->
-  <!-- Just make sure you replace your <style> section with the one above -->
+  <!-- 🔽 PUT ALL YOUR ORIGINAL HTML + SCRIPT BELOW THIS LINE -->
+  
+  <!-- EXAMPLE STRUCTURE -->
+  <div id="app">
+    <aside id="hud">
+      <!-- your sidebar content here -->
+      <h1>Solar System Explorer</h1>
+      <!-- ... -->
+    </aside>
 
-  <!-- Everything after <body> stays exactly the same -->
+    <main id="stage">
+      <canvas id="c"></canvas>
+      <!-- your overlay, tooltip, etc. -->
+    </main>
+  </div>
+
+  <script>
+    // 🔭 your entire JavaScript code goes here
+    // if it's long, paste it all right here in this <script> tag
+  </script>
 </body>
 </html>
