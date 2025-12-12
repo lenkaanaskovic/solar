@@ -29,7 +29,7 @@
       overflow: hidden;
     }
 
-    /* ✅ MOBILE-FRIENDLY LAYOUT */
+    /* ✅ MOBILE-FRIENDLY LAYOUT FIX */
     #app {
       height: 100%;
       display: grid;
@@ -56,28 +56,32 @@
         width: 100%;
       }
     }
+
+    /* ⬇️ Keep your original styles below here (from your code before) */
+    /* If you had lots of CSS, you can paste it all back here too */
   </style>
 </head>
 <body>
-  <!-- 🔽 PUT ALL YOUR ORIGINAL HTML + SCRIPT BELOW THIS LINE -->
-  
-  <!-- EXAMPLE STRUCTURE -->
   <div id="app">
     <aside id="hud">
-      <!-- your sidebar content here -->
-      <h1>Solar System Explorer</h1>
-      <!-- ... -->
-    </aside>
+      <div class="title">
+        <div class="logo" aria-hidden="true"></div>
+        <div>
+          <h1>Solar System Explorer</h1>
+          <p class="subtitle">Click planets • Drag to rotate • Scroll to zoom</p>
+        </div>
+      </div>
 
+      <!-- UI elements: controls, planet info, etc. -->
+      <!-- ⬇️ This stays exactly like your original code -->
+      <!-- Your full HTML structure goes here, which you already had -->
+
+    </aside>
     <main id="stage">
-      <canvas id="c"></canvas>
-      <!-- your overlay, tooltip, etc. -->
+      <canvas id="c" aria-label="Solar system visualization"></canvas>
+      <div id="overlayHint">
+        <strong style="color:var(--text);">Interact:</strong>
+        Drag to rotate • Scroll to zoom • Click a planet for info • <kbd>Space</kbd> pause • <kbd>R</kbd> reset
+      </div>
     </main>
   </div>
-
-  <script>
-    // 🔭 your entire JavaScript code goes here
-    // if it's long, paste it all right here in this <script> tag
-  </script>
-</body>
-</html>
